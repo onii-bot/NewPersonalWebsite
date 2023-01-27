@@ -1,7 +1,7 @@
 <template>
     
     <div class="border-2 border-purple-800 p-2 mt-5 mb-20">
-        <img @click="changeSlide" class="w-[1440px] h-[600px]" :src="showSlide().image" alt="/" />
+        <img @click="changeSlide" class="w-[1440px] h-[600px] object-cover" :src="showSlide().image" alt="/" />
     </div>
 
 </template>
