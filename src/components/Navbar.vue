@@ -1,0 +1,74 @@
+<template>
+    <div :style="{backgroundColor:color}" class="fixed top-0 left-0 z-10 w-full ease-in duration-300">
+        <div class="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+            <a><h1 :style="{color:textColor}" class="font-bold text-4xl">新</h1></a>
+            <ul :style="{color:textColor}" class="hidden sm:flex">
+                <router-link to="/">
+                <li :class="{ 'text-blue-500': this.$route.path === '/' }" class="p-4 hover:text-yellow-300 hover:mr-1">Home</li>
+                </router-link>
+                <router-link to="/about">
+                <li :class="{ 'text-blue-500': this.$route.path === '/about' }" class="p-4 hover:text-yellow-300 hover:mr-1">About</li>
+                </router-link>
+                <a href="/#work">
+                <li class="p-4 hover:text-yellow-300 hover:mr-1">Work</li>
+                </a>
+                <router-link to="/contact">
+                <li :class="{ 'text-blue-500': this.$route.path === '/contact' }" class="p-4 hover:text-yellow-300 hover:mr-1">Contact</li>
+                </router-link>
+
+            </ul>
+            <!-- Mobile Button -->
+            <div @click="handleNav" class="block sm:hidden z-10">
+                <!-- Hamburger -->
+                <p :style="{color:textColor}" v-if="nav">X</p>
+                <p :style="{color:textColor}" v-else>S</p>
+            </div>
+            <div class="sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black/95 text-center ease-in duration-300" :class="[{'left-0': nav}, {'left-[-100%]': !nav}]">
+                <ul>
+                    <router-link to="/"><li :class="{ 'text-stone-800': this.$route.path === '/' }" class="p-4 text-4xl hover:text-gray-500">Home</li></router-link>
+                    <router-link to="/about"><li :class="{ 'text-stone-800': this.$route.path === '/about' }" class="p-4 text-4xl hover:text-gray-500">About</li></router-link>
+                    <a href="#work"><li class="p-4 text-4xl hover:text-gray-500">Work</li></a>
+                    <router-link to="/contact"><li :class="{ 'text-stone-800': $route.path === '/contact' }" class="p-4 text-4xl hover:text-gray-500">Contact</li></router-link>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+
+export default {
+    name: "my-navbar",
+    components: {
+    },
+    data(){
+        return{
+            nav: false,
+            color : "transparent",
+            textColor : "white"
+        }
+    },
+    methods: {
+        handleNav(){
+            this.nav = !this.nav
+        },
+        changeColor() {
+            if (window.scrollY >= 660) {
+                this.color = "#ffffff",
+                this.textColor = "#000000"
+            }
+            else{
+                this.color = "transparent",
+                this.textColor = "#ffffff"
+            }
+        }
+    },
+    created() {
+        window.addEventListener("scroll", this.changeColor);
+        console.log(this.$route.path)
+    },
+    unmounted() {
+        window.removeEventListener("scroll", this.changeColor);
+    }
+}
+</script>

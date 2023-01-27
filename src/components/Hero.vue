@@ -1,0 +1,26 @@
+<template>
+<div class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+    <!-- { /* Overlay */ } -->
+    <div class="absolute top-0 left-0 bottom-0 right-0 bg-black/70 z-[2]" />
+    <div class="p-5 text-white z-[2] mt-[-10rem]">
+        <h2 class="text-5xl font-bold">{{ heading }}</h2>
+        <p class="text-xl py-6 pb-[1.75rem]">{{ message }}</p>
+        <router-link class="px-8 py-2 border hover:bg-black/50 hover:text-white" :to="btn_link">{{ button_text }}</router-link>
+    </div>
+</div>
+
+</template>
+
+<script>
+
+export default{
+    name: "my-hero",
+    props: {
+        heading : String,
+        message: String,
+        button_text: String,
+        btn_link: String
+    }
+}
+
+</script>
