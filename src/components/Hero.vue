@@ -5,7 +5,7 @@
     <div class="p-5 text-white z-[2]">
         <h2 class="text-5xl font-bold">{{ heading }}</h2>
         <p class="text-xl py-6 pb-[1.75rem]">{{ message }}</p>
-        <router-link class="px-8 py-2 border hover:bg-black/50 hover:text-white" :to="btn_link">{{ button_text }}</router-link>
+        <a class="px-8 py-2 border hover:bg-black/50 hover:text-white" :href="btn_link">{{ button_text }}</a>
     </div>
 </div>
 

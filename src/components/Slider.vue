@@ -1,5 +1,6 @@
 <template>
-    
+    <h1 class="text-2xl font-extrabold text-left p-4">{{ slider[0].title }}</h1>
+    <p class="text-2xl font-thin text-left p-4">{{ slider[0].body }}</p>
     <div class="border-2 border-purple-800 p-2 mt-5 mb-20">
         <img @click="changeSlide" class="w-[1440px] h-[600px] object-cover" :src="showSlide().image" alt="/" />
     </div>
@@ -38,9 +39,12 @@ export default {
         changeSlide(event) {
             let image = event.target;
             let x = event.clientX;
-            if (x < (image.width / 2)) {
+            console.log(x)
+            let imgbaseX = image.offsetLeft
+            console.log(image.width)
+            if (x - imgbaseX < (image.width * 0.16)) {
                 this.decreaseIndex();
-            } else {
+            } else if(x - 1.65 * imgbaseX > (image.width * 0.725)) {
                 this.increaseIndex();
             }
         }
