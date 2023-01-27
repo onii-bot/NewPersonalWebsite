@@ -3,16 +3,16 @@
         <div class="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
             <a><h1 :style="{color:textColor}" class="font-bold text-4xl">新</h1></a>
             <ul :style="{color:textColor}" class="hidden sm:flex">
-                <router-link to="/">
+                <router-link @click="toTop" to="/">
                 <li :class="{ 'text-blue-500': this.$route.path === '/' }" class="p-4 hover:text-yellow-300 hover:mr-1">Home</li>
                 </router-link>
-                <router-link to="/about">
+                <router-link @click="toTop" to="/about">
                 <li :class="{ 'text-blue-500': this.$route.path === '/about' }" class="p-4 hover:text-yellow-300 hover:mr-1">About</li>
                 </router-link>
                 <a href="/#work">
                 <li class="p-4 hover:text-yellow-300 hover:mr-1">Work</li>
                 </a>
-                <router-link to="/contact">
+                <router-link @click="toTop" to="/contact">
                 <li :class="{ 'text-blue-500': this.$route.path === '/contact' }" class="p-4 hover:text-yellow-300 hover:mr-1">Contact</li>
                 </router-link>
 
@@ -61,6 +61,9 @@ export default {
                 this.color = "transparent",
                 this.textColor = "#ffffff"
             }
+        },
+        toTop(){
+            window.scrollTo(0,0)
         }
     },
     created() {

@@ -24,6 +24,9 @@ export default{
     name: "my-contact",
     components: {
         Hero
+    },
+    mounted(){
+        window.scrollTo(0, 0)
     }
 }
 

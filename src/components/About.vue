@@ -75,6 +75,9 @@ export default {
     name: "my-about",
     components: {
         Hero
+    },
+    mounted(){
+        window.scrollTo(0, 0)
     }
 }
 
