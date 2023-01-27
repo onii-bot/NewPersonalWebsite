@@ -11,9 +11,9 @@
                 <div class="flex flex-col text-center">
                     <span class="font-bold text-white mt-4 md:mt-0 mb-12">Keep in touch</span>
                     <div class="flex justify-center space-x-8">
-                        <a href="https://www.instagram.com/ash._ua/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/github_logo.png')"></a>
+                        <a href="https://github.com/onii-bot/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/github_logo.png')"></a>
                         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/twitter_logo.png')"></a>
-                        <a href="https://www.linkedin.com/in/aayush-paudel-4a1731227/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/linkedin_logo.png')"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/linkedin_logo.png')"></a>
                     </div>
                 </div>
             </div>
