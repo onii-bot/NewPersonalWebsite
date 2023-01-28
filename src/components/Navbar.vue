@@ -20,15 +20,19 @@
             <!-- Mobile Button -->
             <div @click="handleNav" class="block sm:hidden z-10">
                 <!-- Hamburger -->
-                <p :style="{color:textColor}" v-if="nav">X</p>
-                <p :style="{color:textColor}" v-else>S</p>
+                <Icon v-if="nav" icon="radix-icons:cross-1" 
+                        color="#ffffff"
+                        width="20"/>
+                <Icon :style="{color:textColor}" v-else icon="radix-icons:hamburger-menu"
+                        color="#ffffff"
+                        width="20" />
             </div>
             <div class="sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black/95 text-center ease-in duration-300" :class="[{'left-0': nav}, {'left-[-100%]': !nav}]">
                 <ul>
-                    <router-link to="/"><li :class="{ 'text-stone-800': this.$route.path === '/' }" class="p-4 text-4xl hover:text-gray-500">Home</li></router-link>
-                    <router-link to="/about"><li :class="{ 'text-stone-800': this.$route.path === '/about' }" class="p-4 text-4xl hover:text-gray-500">About</li></router-link>
+                    <router-link to="/" @click="toTop"><li :class="{ 'text-stone-800': this.$route.path === '/' }" class="p-4 text-4xl hover:text-gray-500">Home</li></router-link>
+                    <router-link to="/about" @click="toTop"><li :class="{ 'text-stone-800': this.$route.path === '/about' }" class="p-4 text-4xl hover:text-gray-500">About</li></router-link>
                     <a href="#work"><li class="p-4 text-4xl hover:text-gray-500">Work</li></a>
-                    <router-link to="/contact"><li :class="{ 'text-stone-800': $route.path === '/contact' }" class="p-4 text-4xl hover:text-gray-500">Contact</li></router-link>
+                    <router-link to="/contact" @click="toTop"><li :class="{ 'text-stone-800': $route.path === '/contact' }" class="p-4 text-4xl hover:text-gray-500">Contact</li></router-link>
                 </ul>
             </div>
         </div>
@@ -37,9 +41,12 @@
 
 <script>
 
+import { Icon } from '@iconify/vue';
+
 export default {
     name: "my-navbar",
     components: {
+        Icon
     },
     data(){
         return{
