@@ -1,5 +1,5 @@
 <template>
-    <Hero message="I am Fabian, Web Developer/ Bot Developer/ Python Enthusiast" heading="Hey there,"  button_text="More" btn_link="/about"/>
+    <Hero message="I am Ash, Web Developer/ Bot Developer/ Python Enthusiast" heading="Hey there,"  button_text="More" btn_link="/about"/>
     <div id="work" class="max-w-[1240px] mx-auto mb-10">
         <h1 class="text-2xl font-bold text-center p-4">Work</h1>
         <h2 class="text-xl font-sans text-center p-4">Here are some of the projects I have had the opportunity to work
