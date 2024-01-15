@@ -26,7 +26,7 @@
                     © 2023 by Aayush Paudel
                 </p>
                 <p class="text-sm text-white mb-2">
-                    Created using
+                    Created using Vue
                 </p>
             </div>
         </div>
