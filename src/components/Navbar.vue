@@ -1,7 +1,7 @@
 <template>
     <div :style="{backgroundColor:color}" class="fixed top-0 left-0 z-10 w-full ease-in duration-300">
         <div class="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-            <a><h1 :style="{color:textColor}" class="font-bold text-4xl">新</h1></a>
+            <router-link @click="toTop" to="/"><h1 :style="{color:textColor}" class="font-bold text-4xl">新</h1></router-link>
             <ul :style="{color:textColor}" class="hidden sm:flex">
                 <router-link @click="toTop" to="/">
                 <li :class="{ 'text-blue-500': this.$route.path === '/' }" class="p-4 hover:text-yellow-300 hover:mr-1">Home</li>
