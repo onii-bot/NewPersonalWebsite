@@ -60,13 +60,15 @@ export default {
             this.nav = !this.nav
         },
         changeColor() {
-            if (window.scrollY >= 660) {
-                this.color = "#ffffff",
-                this.textColor = "#000000"
-            }
-            else{
-                this.color = "transparent",
-                this.textColor = "#ffffff"
+            const screenHeight = window.innerHeight;
+            const scrollThreshold = screenHeight * 0.8;
+
+            if (window.scrollY >= scrollThreshold) {
+                this.color = "#ffffff";
+                this.textColor = "#000000";
+            } else {
+                this.color = "transparent";
+                this.textColor = "#ffffff";
             }
         },
         toTop(){
