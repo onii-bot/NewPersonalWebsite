@@ -14,16 +14,14 @@
     data() {
       return {
         index: 0,
-        maxIndex: 2, // Set your maximum index value
-        minIndex: 0, // Set your minimum index value
-        intervalId: null,
+        maxIndex: 2,
+        minIndex: 0,
       };
     },
     props: {
       slider: Array,
     },
     mounted() {
-      // Start the automatic index change every 5 seconds
       this.intervalId = setInterval(() => {
         this.autoChangeIndex();
       }, 5000);
@@ -46,24 +44,6 @@
           this.index -= 1;
         }
       },
-      changeSlide(event) {
-            let image = event.target;
-            let x = event.clientX;
-            console.log(x);
-
-            // Calculate thresholds based on image width
-            const leftThresholdPixels = image.width * 0.16;
-            const rightThresholdPixels = image.width * 0.725;
-
-            let imgbaseX = image.offsetLeft;
-            console.log(image.width);
-
-            if (x - imgbaseX < leftThresholdPixels) {
-                this.decreaseIndex();
-            } else if (x - 1.65 * imgbaseX > rightThresholdPixels) {
-                this.increaseIndex();
-            }
-        },
       autoChangeIndex() {
         this.increaseIndex();
       },

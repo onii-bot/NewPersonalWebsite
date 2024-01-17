@@ -4,8 +4,6 @@
         <h1 class="text-2xl font-bold text-center p-4">Work</h1>
         <h2 class="text-xl font-sans text-center p-4">Here are some of the projects I have had the opportunity to work
             on.</h2>
-        <h3 class="text-md text-center p-1 mb-10">Note: Clicking on the left and right side of the images allows for
-            navigation</h3>
         <Slider v-for="slider in SliderData" :key="slider" :slider="slider" />
         <h1 class="text-2xl font-bold text-center p-4">Check out my <a class="underline" href="https://github.com/onii-bot" target="_blank">Github</a> for more</h1>
     </div>
