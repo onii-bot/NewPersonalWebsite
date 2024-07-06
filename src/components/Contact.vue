@@ -39,7 +39,7 @@ export default {
             },
             showAlert: false,
             alertMessage: '',
-            webhookUrl: process.env.DISCORD_WEBHOOK_URL
+            webhookUrl: process.env.VUE_APP_DISCORD_WEBHOOK_URL
         };
     },
     methods: {
