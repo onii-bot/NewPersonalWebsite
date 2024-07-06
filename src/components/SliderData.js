@@ -1,45 +1,25 @@
 export const SliderData = [
-    [{
-        title: "1.) Book Management",
-        body: "This web application is a simple and user-friendly platform for managing a book collection. It utilizes a CRUD (Create, Read, Update, and Delete) system, allowing users to easily add and update books in a database. The design of the web app is minimalistic, making it easy to navigate and use. The interface is intuitive and allows users to add books to the database with minimal effort. Users have the ability to view all books in the databases. The platform also enables users to update and delete existing books, ensuring that the database remains accurate and up-to-date.",
-        image:
-            'https://i.imgur.com/JudUnYl.png'
+    {
+        title: "1.) Twitter User Tracker",
+        body: `This Python script leverages the Twitter API and the Discord API to provide advanced tracking capabilities. It keeps an eye on multiple users, not just one. Whenever any user from the stored list follows someone new, you'll receive a notification about the new follow. It's like having someone who cares about you so much. Useful? Absolutely. Creepy? Not at all! This script is perfect for businesses and individuals alike.`,
+        desktopimage:
+            'https://i.imgur.com/5PAseFc.png',
+        mobileimage: 
+            'https://i.imgur.com/3DLo0vx.png'
     },
     {
-        image:
+        title: "2.) Book Management",
+        body: "This web application is a straightforward tool for managing a book collection. It uses a basic CRUD (Create, Read, Update, Delete) system, allowing users to easily add, view, update, and delete books in a database. The focus is purely on functionality rather than design, making navigation and usage simple and direct. Users can effortlessly add books, view their collection, and make necessary updates or deletions to maintain an accurate database.",
+        desktopimage:
+            'https://i.imgur.com/JudUnYl.png',
+        mobileimage:
             'https://i.imgur.com/2qTP1f4.png'
     },
     {
-        image:
-            'https://i.imgur.com/aFf39z1.png'
-    },
-    {
-        image:
-            'https://i.imgur.com/7GZbxCV.png'
+        title: "3.) Pong Game",
+        body: `This simple Pong game, definitely not made by literally every other developer, is developed using the Pygame library in Python. Inspired by the classic arcade game, it features two paddles and a bouncing ball. Players control the paddles to keep the ball in play, aiming to score points by getting the ball past their opponent. It is a multiplayer game, perfect for friendly duels and nostalgic fun.`,
+        desktopimage:
+            'https://i.imgur.com/INIgnZA.png',
+        mobileimage: 'https://i.imgur.com/slUkKAE.png'
     }
-    ],
-    [{
-        title: "2.) Twitter User Tracker",
-        body: `This script, written in Python, uses Twitter API and the Discord API, to provide advanced tracking capabilities. One of the key features of 
-        this script is its ability to detect when a specific user, referred to as the "target," follows someone on Twitter. This powerful 
-        functionality allows for real-time monitoring and analysis of social media activity, providing valuable insights and information for 
-        businesses, organizations, and individuals alike.`,
-        image:
-            'https://i.imgur.com/bbJLm00.png'
-    },
-    {
-        image:
-            'https://i.imgur.com/7qYt7dU.png'
-    }
-    ],
-    [{
-        title: "3.) Space Invader",
-        body: `This game Space Invader, is a entertaining game that has been written using the pygame library of Python.
-        The game utilizes the pygame library to create smooth and responsive controls, allowing players to 
-        navigate their ship and defend against the invading alien forces`,
-        image:
-            'https://i.imgur.com/zwCvWfY.png'
-    }
-    ],
-
 ]
