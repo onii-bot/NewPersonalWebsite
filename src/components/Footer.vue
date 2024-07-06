@@ -13,7 +13,7 @@
                     <div class="flex justify-center space-x-8">
                         <a href="https://github.com/onii-bot/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/github_logo.png')"></a>
                         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/twitter_logo.png')"></a>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/linkedin_logo.png')"></a>
+                        <a href="https://www.linkedin.com/in/aayushpaudel/" target="_blank" rel="noopener noreferrer"><img class="cursor-pointer h-6 w-6" :src="require('@/assets/linkedin_logo.png')"></a>
                     </div>
                 </div>
             </div>
