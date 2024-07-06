@@ -73,6 +73,7 @@ export default {
         },
         toTop(){
             window.scrollTo(0,0)
+            this.nav = !this.nav
         }
     },
     created() {

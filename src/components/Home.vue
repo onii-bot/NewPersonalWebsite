@@ -5,7 +5,7 @@
         <h2 class="text-xl font-sans text-center p-4">Here are some of the projects I have had the opportunity to work
             on.</h2>
         <Slider v-for="slider in SliderData" :key="slider" :slider="slider" />
-        <h1 class="text-2xl font-bold text-center p-4">Check out my <a class="underline" href="https://github.com/onii-bot" target="_blank">Github</a> for more</h1>
+        <h1 class="text-2xl font-bold text-center p-4">These are just basic projects. Check out my <a class="underline" href="https://github.com/onii-bot" target="_blank">Github</a> for more</h1>
     </div>
 </template>
 
@@ -26,9 +26,6 @@ export default {
         return{
             SliderData
         }
-    },
-    mounted(){
-        window.scrollTo(0, 0)
     }
 }
 </script>

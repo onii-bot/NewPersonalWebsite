@@ -23,7 +23,7 @@
         <div class="mt-5 flex flex-col items-center">
             <div class="sm:w-2/3 text-center py-6">
                 <p class="text-sm text-white mb-2">
-                    © 2023 by Aayush Paudel
+                    © 2023 by Ayush Paudel
                 </p>
                 <p class="text-sm text-white mb-2">
                     Created using Vue

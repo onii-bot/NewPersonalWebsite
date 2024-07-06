@@ -11,30 +11,30 @@
         <div class="text-left mb-[100px]">
             <h2 class="text-2xl font-extrabold ml-20 p-2 mb-[18px]">What I use</h2>
             <p class="text-xl mx-20 p-2">I employ various techniques and tools to enhance my ingenuity and bring my ideas to fruition. Below are some of the techniques and technologies I have utilized throughout my career.</p>
-            <div class="mt-10">
+            <div class="mt-10 mx-20">
                 <div class="flex flex-wrap justify-between w-full">
-                    <a href="https://www.python.org" target="_blank" class="ml-20 w-[20%] p-2">
+                    <a href="https://www.python.org" target="_blank" class="p-2">
                         <h3>Python</h3>
                     </a>
-                    <a href="https://javascript.com" target="_blank" class="w-[20%] p-2">
+                    <a href="https://javascript.com" target="_blank" class="p-2">
                         <h3>Javascript</h3>
                     </a>
-                    <a href="https://flask.palletsprojects.com" target="_blank" class="w-[20%] p-2">
+                    <a href="https://flask.palletsprojects.com" target="_blank" class="p-2">
                         <h3>Flask</h3>
                     </a>
-                    <a href="https://git-scm.com" target="_blank" class="w-[20%] p-2">
+                    <a href="https://git-scm.com" target="_blank" class="p-2">
                         <h3>Git</h3>
                     </a>
-                    <a href="https://isocpp.org" target="_blank" class="ml-20 w-[20%] p-2">
+                    <a href="https://isocpp.org" target="_blank" class="p-2">
                         <h3>C++</h3>
                     </a>
-                    <a href="https://vuejs.org" target="_blank" class="w-[20%] p-2">
+                    <a href="https://vuejs.org" target="_blank" class="p-2">
                         <h3>VueJS</h3>
                     </a>
-                    <a href="https://www.djangoproject.com" target="_blank" class="w-[20%] p-2">
+                    <a href="https://www.djangoproject.com" target="_blank" class="p-2">
                         <h3>Django</h3>
                     </a>
-                    <a href="https://tailwindcss.com" target="_blank" class="w-[20%] p-2">
+                    <a href="https://tailwindcss.com" target="_blank" class="p-2">
                         <h3>Tailwind</h3>
                     </a>
                 </div>
@@ -43,18 +43,18 @@
         </div>
         <div class="text-left mb-[100px]">
             <h2 class="text-2xl font-extrabold ml-20 p-2 mb-[18px]">Social</h2>
-            <div class="flex flex-wrap">
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <p class="text-xl ml-20 mr-3 p-2 underline">LinkedIn </p>
+            <div class="flex flex-wrap ml-20">
+                <a href="https://www.linkedin.com/in/aayushpaudel/" target="_blank">
+                    <p class="text-xl p-2 underline">LinkedIn </p>
                 </a>
                 <p class="text-xl mr-3 p-2">/ </p>
                 <a href="https://www.twitter.com/" target="_blank">
-                    <p class="text-xl mr-3 p-2 underline">Twitter </p>
+                    <p class="text-xl p-2 underline">Twitter </p>
                 </a>
 
                 <p class="text-xl mr-3 p-2">/ </p>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <p class="text-xl mr-3 p-2 underline">Instagram </p>
+                <a href="https://www.instagram.com/_ashesofash_/" target="_blank">
+                    <p class="text-xl p-2 underline">Instagram </p>
                 </a>
             </div>
         </div>
