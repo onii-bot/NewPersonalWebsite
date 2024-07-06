@@ -9,9 +9,6 @@
                 <router-link @click="toTop" to="/about">
                 <li :class="{ 'text-blue-500': this.$route.path === '/about' }" class="p-4 hover:text-yellow-300 hover:mr-1">About</li>
                 </router-link>
-                <a href="/#work">
-                <li class="p-4 hover:text-yellow-300 hover:mr-1">Work</li>
-                </a>
                 <router-link @click="toTop" to="/contact">
                 <li :class="{ 'text-blue-500': this.$route.path === '/contact' }" class="p-4 hover:text-yellow-300 hover:mr-1">Contact</li>
                 </router-link>
@@ -31,7 +28,6 @@
                 <ul>
                     <router-link to="/" @click="toTop"><li :class="{ 'text-stone-800': this.$route.path === '/' }" class="p-4 text-4xl hover:text-gray-500">Home</li></router-link>
                     <router-link to="/about" @click="toTop"><li :class="{ 'text-stone-800': this.$route.path === '/about' }" class="p-4 text-4xl hover:text-gray-500">About</li></router-link>
-                    <a href="#work"><li class="p-4 text-4xl hover:text-gray-500">Work</li></a>
                     <router-link to="/contact" @click="toTop"><li :class="{ 'text-stone-800': $route.path === '/contact' }" class="p-4 text-4xl hover:text-gray-500">Contact</li></router-link>
                 </ul>
             </div>
@@ -74,7 +70,7 @@ export default {
         toTop(){
             window.scrollTo(0,0)
             this.nav = !this.nav
-        }
+        },
     },
     created() {
         window.addEventListener("scroll", this.changeColor);
