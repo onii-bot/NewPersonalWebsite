@@ -9,11 +9,13 @@ html{
 }
 
 .custom-img {
-    background-image: url("./background.gif");
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer-img {
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/703/593/original/animation-neon-light-heart-romantic-background-love-and-romance-sign-4k-footage-dark-background-video.jpg");
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/009/703/593/original/animation-neon-light-heart-romantic-background-love-and-romance-sign-4k-footage-dark-background-video.jpg");
 }
 
 .quote {
